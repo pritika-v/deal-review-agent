@@ -25,8 +25,8 @@ with st.sidebar:
     st.header('Inputs')
     deal=st.file_uploader('Deal document',type=['pdf'])
     default_policy='data/policies/TN_RERA_Compliance_Rules.json'
-    policy_choice=st.radio('Policy',['Default TN RERA policy','Upload another policy'])
-    uploaded_policy=st.file_uploader('Alternative policy',type=['json','pdf']) if policy_choice!='Default TN RERA policy' else None
+    policy_choice=st.radio('Policy',['Default Compliance policy','Upload another policy'])
+    uploaded_policy=st.file_uploader('Alternative policy',type=['json','pdf']) if policy_choice!='Default Compliance policy' else None
     run=st.button('Run Deal Review',type='primary',disabled=deal is None)
 
 if run and deal:

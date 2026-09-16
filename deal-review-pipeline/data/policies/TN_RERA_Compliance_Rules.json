@@ -1,271 +1,173 @@
 {
-  "document_title": "Haryana Real Estate Deal Review — Gurugram Project",
+  "document_title": "Haryana Resale Agreement Compliance Rules — Gurugram",
   "document_type": "Compliance Rules",
   "jurisdiction": "Haryana, India",
   "authority": "Haryana Real Estate Regulatory Authority (HRERA)",
   "rules": [
     {
       "rule_id": "R01",
-      "category": "Project / Promoter Compliance",
-      "name": "Project registration",
-      "rule": "Verify that the real estate project is registered with the Haryana Real Estate Regulatory Authority where registration is required, and that a valid project registration number and registration period are available.",
+      "category": "Agreement / Party Compliance",
+      "name": "Parties and property identification",
+      "rule": "Verify that the agreement clearly identifies the seller, buyer, property, project, unit number, location and relevant developer or builder references, and that these details are internally consistent throughout the agreement.",
       "required_evidence": [
-        "Project registration certificate",
-        "HRERA project registration number",
-        "HRERA project registration details"
+        "Agreement execution date",
+        "Seller names and addresses",
+        "Buyer names and addresses",
+        "Project name and location",
+        "Unit or apartment number",
+        "Sales order or allotment reference",
+        "Developer or builder details"
       ],
-      "severity": "CRITICAL"
+      "severity": "HIGH"
     },
     {
       "rule_id": "R02",
-      "category": "Project / Promoter Compliance",
-      "name": "Promoter and land title",
-      "rule": "Verify the promoter's identity and PAN, legal title or legally valid rights over the project land, current encumbrance status, and where the land is owned by another party, the owner's consent and applicable development, collaboration or joint-development agreement.",
+      "category": "Title / Transfer Compliance",
+      "name": "Seller title and right to transfer",
+      "rule": "Verify that the seller represents having valid title, ownership rights and legal authority to sell and transfer the property, and that the underlying allotment or builder-buyer documentation supporting the seller's ownership is identified or available.",
       "required_evidence": [
-        "Promoter PAN",
-        "Title deed",
-        "Land ownership documents",
-        "Encumbrance details",
-        "Development or collaboration agreement where applicable"
+        "Seller title or ownership document",
+        "Builder-buyer agreement or allotment document",
+        "Sales order or allotment reference",
+        "Evidence of seller's ownership or allotment",
+        "Transfer or assignment documents where applicable"
       ],
       "severity": "CRITICAL"
     },
     {
       "rule_id": "R03",
-      "category": "Project / Promoter Compliance",
-      "name": "Approvals and sanctioned plan",
-      "rule": "Verify that applicable planning and building permissions, sanctioned plans, layout plans, licenses, NOCs and other approvals required for the project are available and consistent with the transaction.",
+      "category": "Title / Encumbrance Compliance",
+      "name": "No undisclosed encumbrance",
+      "rule": "Verify that the seller has represented that the property is free from charges, liens, mortgages, home loans, encumbrances, court proceedings and third-party claims, and that appropriate clearance or no-encumbrance documentation is required before transfer where applicable.",
       "required_evidence": [
-        "Planning or building approval",
-        "Sanctioned building plan",
-        "Approved layout plan",
-        "Applicable NOCs and licenses"
+        "Seller representation regarding clear title",
+        "No-encumbrance certificate",
+        "Loan clearance certificate",
+        "Encumbrance certificate",
+        "Mortgage or charge release documents",
+        "Court or dispute declarations"
       ],
       "severity": "CRITICAL"
     },
     {
       "rule_id": "R04",
-      "category": "Project / Promoter Compliance",
-      "name": "Project disclosure and carpet area",
-      "rule": "Verify that the project disclosures contain material information including apartment or plot details, carpet area, location, parking information, development details, project professionals and other information required to be disclosed to allottees.",
+      "category": "Agreement / Consideration Compliance",
+      "name": "Total sale consideration",
+      "rule": "Verify that the agreement clearly states the total sale consideration and that the consideration is consistent across the agreement, payment clauses and payment schedule, including agreed charges, taxes, parking or other included components.",
       "required_evidence": [
-        "Project disclosure",
-        "HRERA project webpage documents",
-        "Carpet area details",
-        "Parking details"
+        "Total sale consideration clause",
+        "Payment terms",
+        "Payment schedule",
+        "Included charges",
+        "Tax or statutory charge provisions"
       ],
       "severity": "HIGH"
     },
     {
       "rule_id": "R05",
-      "category": "Project / Promoter Compliance",
-      "name": "70% separate account",
-      "rule": "Verify that 70% of amounts realised from allottees for the real estate project are deposited into a separate account maintained with a scheduled bank and are used for land and construction costs of that project as required by applicable RERA provisions.",
+      "category": "Advance / Agreement Compliance",
+      "name": "Advance payment and agreement threshold",
+      "rule": "Verify the amount already paid before execution of the agreement and compare it with the stated total sale consideration. Where the Haryana RERA 10% threshold is relevant to the transaction, verify whether the agreement and payment sequence are consistent with the applicable requirement.",
       "required_evidence": [
-        "Separate RERA bank account evidence",
-        "Bank statements",
-        "Promoter declaration",
-        "Project fund utilisation records"
+        "Advance payment amount",
+        "Advance payment date",
+        "Payment receipt or cheque reference",
+        "Total sale consideration",
+        "Agreement execution date",
+        "Payment terms concerning the 10% threshold"
+      ],
+      "severity": "HIGH"
+    },
+    {
+      "rule_id": "R14",
+      "category": "Financial / Payment Compliance",
+      "name": "Payment schedule and reconciliation",
+      "rule": "Verify that the payment schedule specifies payment dates, amounts, beneficiaries and payment descriptions, and that the scheduled payments reconcile to the stated total sale consideration after accounting for TDS or other stated deductions. Identify any arithmetic mismatch or unexplained amount.",
+      "required_evidence": [
+        "Payment schedule",
+        "Advance payment",
+        "Agreement signing payment",
+        "TDS amount",
+        "Final payment amount",
+        "Payment beneficiaries",
+        "Total sale consideration"
       ],
       "severity": "CRITICAL"
     },
     {
       "rule_id": "R06",
-      "category": "Project / Promoter Compliance",
-      "name": "Controlled withdrawal",
-      "rule": "Verify that withdrawals from the separate project account are made in proportion to the percentage of project completion and are supported by the required engineer, architect and chartered accountant certifications.",
+      "category": "Transaction / Registration Compliance",
+      "name": "Transfer and registration obligations",
+      "rule": "Verify that the agreement clearly specifies the obligations and timeline for completing the transaction, executing the sale deed and registering the property, and identifies which party is responsible for the required registration and transfer formalities.",
       "required_evidence": [
-        "Engineer certificate",
-        "Architect certificate",
-        "Chartered accountant certificate",
-        "Project completion or cost records"
+        "Transaction completion deadline",
+        "Sale deed execution requirement",
+        "Registration requirement",
+        "Seller registration obligations",
+        "Buyer registration obligations",
+        "Transfer documentation requirements"
       ],
       "severity": "CRITICAL"
     },
     {
       "rule_id": "R07",
-      "category": "Project / Promoter Compliance",
-      "name": "Annual project account audit",
-      "rule": "Verify that project accounts are audited by a chartered accountant within six months after the end of each financial year and that certified statements confirm appropriate utilisation of project collections and compliance with withdrawal requirements.",
+      "category": "Refund / Remedy Compliance",
+      "name": "Refund and indemnity protection",
+      "rule": "Verify that the agreement provides a contractual remedy if the seller or developer fails to transfer the property, including refund of amounts received and, where stated, indemnification for losses arising from incorrect title, encumbrance or ownership representations.",
       "required_evidence": [
-        "CA audit report",
-        "Certified project account statement",
-        "Annual financial records"
+        "Refund clause",
+        "Seller or developer non-transfer clause",
+        "Title representation",
+        "Indemnity clause",
+        "Loss or damages provision"
       ],
-      "severity": "HIGH"
+      "severity": "CRITICAL"
     },
     {
       "rule_id": "R08",
-      "category": "Project / Promoter Compliance",
-      "name": "Quarterly project updates",
-      "rule": "Verify that the promoter provides or files required project updates including bookings, parking bookings, construction progress, photographs and approval status within the applicable Haryana RERA reporting period.",
+      "category": "Financial / Tax Compliance",
+      "name": "Dues, taxes and transaction expenses",
+      "rule": "Verify that the agreement clearly allocates outstanding property dues, taxes, fees, stamp duties, registration charges, processing fees and other transaction expenses between the parties and specifies the applicable point in time for each obligation.",
       "required_evidence": [
-        "Quarterly project update",
-        "Construction progress records",
-        "Project photographs",
-        "Approval status records"
+        "Outstanding dues clause",
+        "Property tax responsibility",
+        "Seller payment obligations",
+        "Buyer payment obligations",
+        "Stamp duty provision",
+        "Registration fee provision",
+        "Processing or administrative fee provision"
       ],
       "severity": "HIGH"
     },
     {
       "rule_id": "R09",
-      "category": "Agreement / Allottee Compliance",
-      "name": "Agreement for sale and advance restriction",
-      "rule": "Verify that the agreement for sale follows the prescribed Haryana RERA form or Annexure A requirements where applicable. A promoter should not accept more than 10% of the cost of the apartment, plot or building as advance or application fee without first entering into and registering the required written agreement for sale.",
+      "category": "Transfer / Documentation Compliance",
+      "name": "Transfer documentation and clearance",
+      "rule": "Verify that the seller is responsible for arranging the documentation, approvals, loan clearance, no-encumbrance evidence and other formalities required for transfer of the property to the buyer, and identify any required documents that are referenced but not provided.",
       "required_evidence": [
-        "Registered agreement for sale",
-        "Annexure A agreement",
-        "Allotment letter",
-        "Prior application or allotment documents",
-        "Payment records"
+        "Transfer documentation clause",
+        "Approval documents",
+        "Loan clearance certificate",
+        "No-encumbrance certificate",
+        "Developer transfer requirements",
+        "Registration documents"
       ],
-      "severity": "CRITICAL"
+      "severity": "HIGH"
     },
     {
       "rule_id": "R10",
-      "category": "Title / Encumbrance Compliance",
-      "name": "No conflicting encumbrance",
-      "rule": "Verify that the property being conveyed is free from undisclosed encumbrances, mortgages, charges and title defects. Where project finance or a lender charge exists, verify appropriate lender release or NOC arrangements for the property being transferred.",
+      "category": "Intermediary / Agent Compliance",
+      "name": "Real estate intermediary and consultation charges",
+      "rule": "Where an intermediary or real estate advisor is involved, verify that the agreement identifies the intermediary, the applicable fee or commission, the basis of calculation, applicable GST or taxes, and any stated registration or license reference. Where only a synthetic or non-verifiable registration reference is provided, escalate for human verification.",
       "required_evidence": [
-        "Title documents",
-        "Encumbrance certificate",
-        "Mortgage or charge details",
-        "Lender NOC or release where applicable"
-      ],
-      "severity": "CRITICAL"
-    },
-    {
-      "rule_id": "R11",
-      "category": "Financial / Agreement Compliance",
-      "name": "Interest rate",
-      "rule": "Where interest is payable by the promoter to the allottee or by the allottee to the promoter under applicable RERA provisions, verify that the applicable rate is the State Bank of India's highest Marginal Cost of Lending Rate plus two percent, or the applicable replacement benchmark if SBI MCLR is no longer in use.",
-      "required_evidence": [
-        "Agreement for sale",
-        "Demand calculation",
-        "Refund calculation",
-        "Applicable SBI benchmark"
-      ],
-      "severity": "HIGH"
-    },
-    {
-      "rule_id": "R12",
-      "category": "Financial / Refund Compliance",
-      "name": "Refund timeline",
-      "rule": "Where a refund together with applicable interest and compensation becomes due from the promoter under the Act or applicable rules, verify that the amount is payable to the allottee within 90 days from the date it becomes due.",
-      "required_evidence": [
-        "Termination or refund records",
-        "Refund calculation",
-        "Payment proof",
-        "Refund demand or notice"
-      ],
-      "severity": "CRITICAL"
-    },
-    {
-      "rule_id": "R13",
-      "category": "Financial / Performance Compliance",
-      "name": "Promoter delay and possession",
-      "rule": "Verify the contractual possession date and applicable delay provisions. Where the promoter fails to give possession in accordance with the agreement, verify that the agreement and applicable RERA provisions provide the allottee with the applicable refund, interest, compensation or continuing-delay interest remedies.",
-      "required_evidence": [
-        "Agreement possession date",
-        "Possession records",
-        "Milestone records",
-        "Payment records",
-        "Delay notices"
-      ],
-      "severity": "CRITICAL"
-    },
-    {
-      "rule_id": "R14",
-      "category": "Financial / Agreement Compliance",
-      "name": "Payment obligations",
-      "rule": "Verify that the agreement clearly states the total consideration, payment schedule, payment milestones and applicable charges, and that payments or loan disbursements are traceable to the agreed transaction and parties.",
-      "required_evidence": [
-        "Agreement for sale",
-        "Payment schedule",
-        "Receipts",
-        "Bank records",
-        "Demand letters"
-      ],
-      "severity": "HIGH"
-    },
-    {
-      "rule_id": "R15",
-      "category": "Financial / Commercial Compliance",
-      "name": "Cost escalation evidence",
-      "rule": "Where an increased demand or additional development charge is imposed based on a government, planning authority or other competent authority requirement, verify that the agreement or demand identifies the applicable notification, order, rule, regulation or other supporting authority.",
-      "required_evidence": [
-        "Demand letter",
-        "Additional charge calculation",
-        "Government or authority notification",
-        "Planning authority order"
-      ],
-      "severity": "HIGH"
-    },
-    {
-      "rule_id": "R16",
-      "category": "Project / Construction Compliance",
-      "name": "Approved-plan conformity",
-      "rule": "Verify that development and construction conform to the sanctioned plans, layout plans and specifications approved by the competent authorities. Material additions or alterations must comply with applicable RERA consent requirements.",
-      "required_evidence": [
-        "Sanctioned plan",
-        "Approved layout",
-        "Project construction evidence",
-        "Allottee consent where applicable"
-      ],
-      "severity": "CRITICAL"
-    },
-    {
-      "rule_id": "R17",
-      "category": "Construction / Defect Compliance",
-      "name": "Five-year defect liability",
-      "rule": "Verify that structural defects or defects in workmanship, quality or provision of services covered by the applicable RERA provisions and brought to the promoter's notice within five years from handing over possession are addressed by the promoter without further charge within the applicable statutory period.",
-      "required_evidence": [
-        "Agreement for sale",
-        "Possession or handover record",
-        "Defect notice",
-        "Rectification records"
-      ],
-      "severity": "HIGH"
-    },
-    {
-      "rule_id": "R18",
-      "category": "Association / Handover Compliance",
-      "name": "Association and handover",
-      "rule": "Verify that applicable requirements concerning formation or participation of the association of allottees, transfer of common areas and project handover or maintenance responsibilities are addressed in the agreement and project records.",
-      "required_evidence": [
-        "Association records",
-        "Formation documents",
-        "Handover records",
-        "Maintenance transfer records",
-        "Conveyance documents"
+        "Intermediary name",
+        "Intermediary address",
+        "Fee or commission percentage",
+        "GST or applicable tax provision",
+        "Registration or license reference",
+        "Payment responsibility"
       ],
       "severity": "MEDIUM"
-    },
-    {
-      "rule_id": "R19",
-      "category": "Agreement / Modification Compliance",
-      "name": "Written amendments and sanctioned-plan changes",
-      "rule": "Verify that amendments to the agreement are documented through written consent of the relevant parties and that additions or alterations to sanctioned plans, layouts or specifications comply with applicable RERA consent requirements and do not unlawfully reduce allottee rights.",
-      "required_evidence": [
-        "Original agreement",
-        "Written amendments",
-        "Allottee consent",
-        "Revised sanctioned plan where applicable"
-      ],
-      "severity": "HIGH"
-    },
-    {
-      "rule_id": "R20",
-      "category": "Real Estate Agent Compliance",
-      "name": "Registered real estate agent",
-      "rule": "If a real estate agent, broker or intermediary is involved in facilitating the transaction, verify that the agent is registered with the Haryana Real Estate Regulatory Authority and that valid registration details are available. The agent must comply with applicable RERA obligations and must not facilitate transactions in projects requiring registration where the required project registration is absent.",
-      "required_evidence": [
-        "Real estate agent registration certificate",
-        "HRERA agent registration number",
-        "HRERA agent registration details",
-        "Project registration details"
-      ],
-      "severity": "HIGH"
     }
   ]
 }
