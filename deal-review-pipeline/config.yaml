@@ -1,0 +1,29 @@
+llm:
+  provider: openrouter
+  model_env: OPENROUTER_MODEL
+  base_url_env: OPENROUTER_BASE_URL
+  temperature: 0
+  max_tokens: 6000
+retrieval:
+  top_k_bm25: 8
+  top_k_dense: 8
+  top_k_rerank: 5
+  chunk_size: 900
+  chunk_overlap: 120
+risk:
+  max_score: 100
+  weights:
+    critical_fail: 30
+    high_fail: 15
+    medium_fail: 7
+    critical_missing_evidence: 20
+    high_missing_evidence: 10
+    material_ambiguity: 8
+    material_uncertainty: 6
+    financial_inconsistency: 12
+    conflicting_information: 15
+    human_review: 10
+  bands:
+    LOW: 24
+    MEDIUM: 49
+    HIGH: 74

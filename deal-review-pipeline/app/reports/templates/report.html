@@ -1,0 +1,16 @@
+<!doctype html><html><head><meta charset="utf-8"><style>body{font-family:Arial,sans-serif;font-size:10pt;color:#222}h1,h2{color:#17324d}table{width:100%;border-collapse:collapse;margin:8px 0}th,td{border:1px solid #bbb;padding:5px;vertical-align:top}th{background:#eee}.pill{font-weight:bold}.small{font-size:8pt;color:#555}.risk{page-break-inside:avoid}</style></head><body>
+<h1>Multi-Agent Deal Review Report</h1><p class="small">Document: {{ report.document_id }} | Policy: {{ report.policy_id }} v{{ report.policy_version }} | Generated: {{ report.generated_at }}</p>
+<h2>Executive Summary</h2><p>{{ report.executive_summary }}</p>
+<h2>Deal Overview</h2><table>{% for k,v in report.deal_overview.items() %}<tr><th>{{k}}</th><td>{{v}}</td></tr>{% endfor %}</table>
+<h2>Extracted Terms</h2><table><tr><th>Field</th><th>Value</th><th>Status</th><th>Confidence</th><th>Page</th><th>Clause</th></tr>{% for t in report.extracted_terms %}<tr><td>{{t.field}}</td><td>{{t.value}}</td><td>{{t.status}}</td><td>{{'%.2f'|format(t.confidence)}}</td><td>{{t.page}}</td><td>{{t.clause}}</td></tr>{% endfor %}</table>
+<h2>Evidence</h2><table><tr><th>Page</th><th>Section/Clause</th><th>Score</th><th>Text</th></tr>{% for e in report.evidence %}<tr><td>{{e.page}}</td><td>{{e.section or ''}} / {{e.clause or ''}}</td><td>{{'%.3f'|format(e.score)}}</td><td>{{e.text}}</td></tr>{% endfor %}</table>
+<h2>Compliance Matrix</h2><table><tr><th>Rule</th><th>Status</th><th>Severity</th><th>Rationale</th><th>Page</th><th>Missing/Ambiguity</th></tr>{% for r in report.compliance_matrix %}<tr><td>{{r.rule_id}}</td><td>{{r.status}}</td><td>{{r.severity}}</td><td>{{r.rationale}}</td><td>{{r.page}}</td><td>{{r.missing_information|join(', ')}} {{r.ambiguity|join('; ')}}</td></tr>{% endfor %}</table>
+<h2>Risk Register</h2>{% for r in report.risk_register %}<div class="risk"><b>{{r.risk_id}} — {{r.title}} ({{r.severity}})</b><p>{{r.description}}</p><p><b>Action:</b> {{r.action}}</p></div>{% endfor %}
+<h2>Missing Information</h2><ul>{% for x in report.missing_information %}<li>{{x}}</li>{% endfor %}</ul>
+<h2>Ambiguities / Uncertainty</h2><ul>{% for x in report.ambiguities %}<li>{{x}}</li>{% endfor %}</ul>
+<h2>High-Risk Findings</h2><ul>{% for x in report.high_risk_findings %}<li>{{x}}</li>{% endfor %}</ul>
+<h2>Follow-up Actions</h2><ol>{% for x in report.follow_up_actions %}<li>{{x}}</li>{% endfor %}</ol>
+<h2>Overall Risk</h2><p><b>{{report.risk_score.risk_score}} / 100 — {{report.risk_score.risk_level}}</b> | Status: <b>{{report.risk_score.status}}</b></p><table><tr><th>Factor</th><th>Points</th><th>Reason</th></tr>{% for f in report.risk_score.factors %}<tr><td>{{f.factor}}</td><td>{{f.points}}</td><td>{{f.reason}}</td></tr>{% endfor %}</table>
+<h2>Human Review</h2><ul>{% for x in report.human_review_reasons %}<li>{{x}}</li>{% endfor %}</ul>
+<h2>Audit Metadata</h2><pre>{{report.audit_metadata}}</pre>
+</body></html>
